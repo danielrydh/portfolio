@@ -1,3 +1,7 @@
+
+/* GENERAL STYLES FOR THE PAGE */
+
+
 body {
   display: flex;
   justify-content: center;
@@ -5,16 +9,93 @@ body {
 
 }
 
-
-
+/* THE FOX CONTAINER */
 
 
 .fox-container {
   width: 400px;
   height: 600px;
-  background: red;
+  /* background: red; */
+  perspective: 700px;
 }
 
-.one {
-  display: none;
+/* KEYFRAMES FOR FOX ANIMATION */
+
+/* EYEBROWS EYEBROWS EYEBROWS */
+
+@keyframes eyebrows-raise {
+   10% {
+    transform: translateY(-5px);
+   }
+   20% {
+    transform: translateY(-5px);
+   }
+   30% {
+    transform: translateY(0px);
+   }
+}
+
+/* NOSE NOSE NOSE NOSE NOSE NOSE NOSE  */
+
+@keyframes nose-wiggle {
+  5% { transform: rotate(5deg);  }
+
+  10% { transform: rotate(-5deg);  }
+
+  15% { transform: rotate(0deg); }
+
+}
+
+/* ARM ARM ARM ARM ARM ARM ARM ARM ARM */
+
+@keyframes left-arm-raise {
+  5% { transform: rotate(-5deg);  }
+
+  30% { transform: rotate(20deg);  }
+
+  60% { transform: rotate(-20deg); }
+
+  95% { transform: rotate(5deg);  }
+
+}
+
+/* FOX BODY FOX BODY FOX BODY FOX BODY */
+
+@keyframes body-sway {
+  30% {}
+}
+
+/* THE FOX TRANSFORM-ORIGIN FIX. ALL ROTATE AROUND FOX MIDPOINT */
+
+.whole-fox * {
+transform-origin: 100px 150px;
+}
+
+
+/* THE FOX SVG GROUPS STYLES */
+
+/* EYEBROWS EYEBROWS EYEBROWS */
+.left-eyebrow {
+  animation: eyebrows-raise 2s ;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+}
+
+
+/* NOSE NOSE NOSE NOSE NOSE */
+.nose {
+  transform-origin: 94px 100px;
+  animation: nose-wiggle 3s infinite;
+}
+
+
+/* LEFT ARM LEFT ARM LEFT ARM LEFT ARM */
+
+.left-arm-thumb {
+  animation: left-arm-raise 2s infinite;
+}
+
+/* RIGHT ARM RIGHT ARM RIGHT ARM RIGHT ARM */
+.right-arm-thumb {
+  animation: left-arm-raise 2s infinite;
 }
