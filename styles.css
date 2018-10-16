@@ -1,0 +1,20 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
+
+
+.fox-container {
+  width: 400px;
+  height: 600px;
+  background: red;
+}
+
+.one {
+  display: none;
+}
