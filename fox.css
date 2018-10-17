@@ -1,0 +1,176 @@
+/* THE FOX CONTAINER */
+
+
+.fox-container {
+  width: 400px;
+  height: 600px;
+  /* background: red; */
+  perspective: 700px;
+  position: absolute;
+  z-index: 100;
+}
+
+/* KEYFRAMES FOR FOX ANIMATION */
+
+/* EARS EARS EARS EARS EARS EARS */
+
+@keyframes ear-wiggle-left {
+  20% {transform: rotateZ(-10deg);}
+  30% {transform: rotateZ(0deg);}
+  40% {transform: rotateZ(-10deg);}
+  50% {transform: rotateZ(0deg);}
+  60% {transform: rotateZ(10deg);}
+  70% {transform: rotateZ(0deg);}
+  80% {transform: rotateZ(-10deg);}
+  90% {transform: translateY(-5px);}
+}
+
+@keyframes ear-wiggle-right {
+  20% {transform: rotateZ(10deg);}
+  30% {transform: rotateZ(0deg);}
+  40% {transform: rotateZ(-10deg);}
+  50% {transform: rotateZ(0deg);}
+  60% {transform: rotateZ(10deg);}
+  70% {transform: rotateZ(0deg);}
+  80% {transform: rotateZ(10deg);}
+  90% {transform: translateY(-5px);}
+
+}
+
+
+/* EYEBROWS EYEBROWS EYEBROWS */
+
+@keyframes eyebrows-raise-left {
+   10% { transform: translateY(-5px); }
+   20% { transform: translateY(-5px); }
+   30% { transform: translateY(3px);}
+   40% { transform: translateY(0px); }
+   60% { transform: rotateZ(-30deg);}
+
+ }
+
+   @keyframes eyebrows-raise-right {
+      10% { transform: translateY(-5px); }
+      20% { transform: translateY(-5px); }
+      30% { transform: translateY(3px); }
+      40% { transform: translateY(0px); }
+      60% { transform: rotateZ(30deg);}
+}
+
+/* NOSE NOSE NOSE NOSE NOSE NOSE NOSE  */
+
+@keyframes nose-wiggle {
+  10% {transform: translateY(-2px);}
+  20% {transform: translateY(0px);}
+  35% { transform: rotate(7deg);  }
+  40% { transform: rotate(-7deg);  }
+  45% { transform: rotate(7deg); }
+  50% { transform: rotate(-7deg);  }
+  55% { transform: rotate(7deg);  }
+  60% { transform: rotate(-7deg); }
+  65% { transform: rotate(7deg); }
+  70% { transform: rotate(0deg); }
+
+}
+
+/* ARM ARM ARM ARM ARM ARM ARM ARM ARM */
+
+@keyframes arm-wave {
+  5% { transform: rotate(30deg);  }
+  10% { transform: rotate(-30deg);  }
+  15% { transform: rotate(30deg);  }
+  20% { transform: rotate(-30deg);  }
+  25% { transform: rotate(30deg);  }
+  30% { transform: rotate(-30deg);  }
+  35% { transform: rotate(30deg);  }
+  40% { transform: rotate(-30deg);  }
+  45% { transform: rotate(0deg);  }
+
+
+}
+
+
+/* FOX BODY FOX BODY FOX BODY FOX BODY */
+
+@keyframes body-sway {
+  /* 5% { transform: translateX(5px);}
+  10% { transform: translateX(-5px);}
+  15% { transform: translateX(5px);}
+  20% { transform: translateX(-5px);}
+  25% { transform: translateX(-5px);}
+  30% { transform: translateX(0px);}
+  40% { transform: translateY(-0px);}
+  45% { transform: translateY(-2px);}
+  70% { transform: translateY(10px);} */
+
+
+  5% { transform: translateY(-2px);}
+  50% { transform: translateY(10px);}
+}
+
+
+/* THE FOX TRANSFORM-ORIGIN FIX. ALL ROTATE AROUND FOX MIDPOINT */
+
+.whole-fox * {
+transform-origin: 100px 150px;
+}
+
+
+/* THE FOX SVG GROUPS STYLES */
+
+/* EYEBROWS EYEBROWS EYEBROWS */
+.left-eyebrow {
+  animation: eyebrows-raise-left 2s ;
+  animation-iteration-count: infinite;
+  transform-origin: 81px 106px;
+}
+
+.right-eyebrow {
+  animation: eyebrows-raise-right 2s ;
+  animation-iteration-count: infinite;
+  transform-origin: 108px 106px;
+}
+
+/* EYES EYES EYES EYES EYES EYES EYES EYES */
+
+.left-eye {
+  animation: eye-large 4s infinite;
+}
+
+
+
+/* NOSE NOSE NOSE NOSE NOSE */
+.nose {
+  transform-origin: 94px 90px;
+  animation: nose-wiggle 3s infinite;
+}
+
+
+/* ARMS ARMS ARMS ARMS ARMS ARMS ARMS ARMS*/
+
+
+.left-arm-thumb {
+  animation: arm-wave 2s infinite;
+}
+
+.right-arm-thumb {
+  animation: arm-wave 2s infinite;
+  animation-delay: .2s;
+}
+
+/* MAIN BODY MAIN BODY MAIN BODY MAIN BODY */
+.body-face-ears {
+  animation: body-sway 2s infinite;
+}
+
+
+/* EAR EAR EAR EAR EAR EAR EAR EAR EAR EAR */
+.left-ear {
+  transform-origin: 94px 130px;
+  animation: ear-wiggle-left 4s infinite;
+}
+
+.right-ear {
+  transform-origin: 94px 130px;
+  animation: ear-wiggle-right 4s infinite;
+}
