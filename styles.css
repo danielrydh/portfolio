@@ -25,6 +25,14 @@ body {
 
 }
 
+.mountain-container {
+  width: 1500px;
+position: absolute;
+
+
+align-self: ´stretch;
+
+}
 .ground-container {
   width: 1700px;
 position: absolute;

@@ -1,0 +1,50 @@
+
+/* GRASS CONTAINER GRASS CONTAINER GRASS CONTAINER GRASS CONTAINER */
+
+.grass1-container {
+  width: 1500px;
+position: absolute;
+margin-left: 10px;
+margin-top: 235px;
+
+
+}
+
+.grass2-container {
+  width: 1550px;
+position: absolute;
+margin-left: 10px;
+margin-top: 245px;
+transform: rotateY(180deg);
+
+}
+
+/* KEYFRAMES KEYFRAMES KEYFRAMES KEYFRAMES KEYFRAMES KEYFRAMES */
+
+@keyframes grass1-movment {
+
+  40%{transform: skewX(1deg);}
+  80%{transform: skewX(-1deg);}
+
+
+}
+
+@keyframes grass2-movment {
+
+  40%{transform: skewX(-2deg);}
+  80%{transform: skewX(2deg);}
+}
+
+
+/* ANIMATIONS GRASS ANIMATIONS GRASS ANIMATIONS GRASS ANIMATIONS GRASS */
+
+.grass1 {
+  animation: grass1-movment 2.2s infinite;
+  transform-origin: 94px 200px;
+}
+
+.grass2 {
+  animation: grass2-movment 2s infinite;
+  transform-origin: 94px 200px;
+
+}
