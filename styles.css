@@ -17,12 +17,29 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background: #f2f2f2; */
-  background-image: linear-gradient(#e2e2e2, #ffffff);
+  background: red;
   overflow: hidden;
   border: 3px solid black;
   border-radius: 20px;
   position: relative;
+
+}
+
+.sky-container {
+  /* background: red; */
+  /* background-image: linear-gradient(#b5b3b3, #ffffff); */
+  width: 1400px;
+  position: absolute;
+  transform: translatey(-10px);
+
+
+}
+
+.mount-container {
+  width: 700px;
+
+  position: absolute;
+  transform: translatey(-150px) ;
 
 }
 
@@ -31,6 +48,11 @@ body {
   position: absolute;
 }
 
+.hills-container {
+  width: 1450px;
+  position: absolute;
+  margin-top: 100px;
+}
 
 .ground-container {
   width: 1700px;

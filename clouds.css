@@ -1,25 +1,51 @@
 
-.cloud2-container {
-  width: 800px;
-  margin-bottom: 200px;
-}
-
-
 /* KEYFRAMES KEYFRAMES KEYFRAMES KEYFRAMES KEYFRAMES KEYFRAMES KEYFRAMES KEYFRAMES  */
 
 @keyframes cloud1-movement {
 
-  50%{ transform: translateX(-1100px);}
+  100%{ transform: translateX(-1200px) translateY(10px);}
 
 }
 
 @keyframes cloud2-movement {
 
-  50%{ transform: translateX(1100px);}
+  100%{ transform: translateX(-1200px)}
+
+}
+
+@keyframes cloud3-movement {
+
+  100%{ transform: translateX(1200px);}
+
+}
+
+@keyframes cloud4-movement {
+  0% {opacity: 0}
+  20% {opacity: 1}
+  100%{transform: translateX(-1200px);}
+
+}
+
+@keyframes cloud5-movement {
+  0% {opacity: 0}
+  30% {opacity: 1}
+  100%{ transform: translateX(1200px);}
+
+}
+
+@keyframes cloud6-movement {
+
+  100%{transform: translateX(2500px);}
 
 }
 
 
+@keyframes cloud7-movement {
+  0% {opacity: 0}
+  20%{opacity: 1}
+  100%{transform: translateX(-1800px);}
+
+}
 
 
 
@@ -27,22 +53,100 @@
 
 /* CLOUD 1 CLOUD 1 CLOUD 1 CLOUD 1 CLOUD 1 CLOUD 1 CLOUD 1 CLOUD 1 */
 
-.cloud1-container {
-  width: 800px;
 
+.cloud1-container {
+  width: 400px;
+  position: absolute;
+}
+
+.cloud2-container {
+  width: 400px;
+  position: absolute;
+}
+
+.cloud3-container {
+  width: 400px;
+  position: absolute;
+}
+
+.cloud4-container {
+  width: 3000px;
+  margin-top: 40px;
+  position: absolute;
+}
+
+.cloud5-container {
+  width: 1400px;
+  margin-top: 70px;
+  position: absolute;
+}
+
+.cloud6-container {
+  width: 3000px;
+  position: absolute;
+}
+
+.cloud6b-container {
+  width: 3000px;
+  position: absolute;
+}
+
+.cloud7-container {
+  width: 2000px;
+  position: absolute;
 }
 
 .cloud1 {
-margin-bottom: 200px;
-transform: translateX(1000px);
-animation: cloud1-movement 60s infinite;
+margin-bottom: 400px;
+transform: translateX(900px) translateY(10px);
+animation: cloud2-movement 360s infinite;
 animation-timing-function: linear;
+
 }
 
 .cloud2 {
-margin-bottom: 200px;
+margin-bottom: 400px;
+transform: translateX(1000px);
+animation: cloud2-movement 340s -130s infinite;
+animation-timing-function: linear;
+
+}
+
+.cloud3 {
+margin-bottom: 400px;
 transform: translateX(-1000px);
-animation: cloud2-movement 90s infinite;
+animation: cloud3-movement 360s -130s infinite;
+animation-timing-function: linear;
+
+}
+
+.cloud4 {
+transform: translateX(1000px);
+animation: cloud4-movement 240s -90s infinite;
+animation-timing-function: linear;
+
+}
+
+.cloud5 {
+transform: translateX(-700px) translateY(-50px);
+animation: cloud5-movement 120s -20s infinite;
+animation-timing-function: linear;
+
+}
+
+.cloud6 {
+transform: translateX(-1500px) translateY(-70px);
+animation: cloud6-movement 460s -100s infinite;
+
+animation-timing-function: linear;
+
+}
+
+
+.cloud7 {
+margin-top: 200px;
+transform: scaleY(.5) translateX(800px) translateY(50px);
+animation: cloud7-movement 120s -30s infinite;
 animation-timing-function: linear;
 
 }
