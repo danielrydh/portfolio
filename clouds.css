@@ -2,20 +2,19 @@
 /* KEYFRAMES KEYFRAMES KEYFRAMES KEYFRAMES KEYFRAMES KEYFRAMES KEYFRAMES KEYFRAMES  */
 
 @keyframes cloud1-movement {
-
-  100%{ transform: translateX(-1200px) translateY(10px);}
+  100%{ transform: translateX(-1000px) translateY(10px);}
 
 }
 
 @keyframes cloud2-movement {
 
-  100%{ transform: translateX(-1200px)}
+  100%{ transform: translateX(-1000px)}
 
 }
 
 @keyframes cloud3-movement {
 
-  100%{ transform: translateX(1200px);}
+  100%{ transform: translateX(1000px);}
 
 }
 
@@ -28,7 +27,7 @@
 
 @keyframes cloud5-movement {
   0% {opacity: 0}
-  30% {opacity: 1}
+  10% {opacity: 1}
   100%{ transform: translateX(1200px);}
 
 }
@@ -99,7 +98,7 @@
 .cloud1 {
 margin-bottom: 400px;
 transform: translateX(900px) translateY(10px);
-animation: cloud2-movement 360s infinite;
+animation: cloud2-movement 460s -170s infinite;
 animation-timing-function: linear;
 
 }
@@ -107,7 +106,7 @@ animation-timing-function: linear;
 .cloud2 {
 margin-bottom: 400px;
 transform: translateX(1000px);
-animation: cloud2-movement 340s -130s infinite;
+animation: cloud2-movement 340s -190s infinite;
 animation-timing-function: linear;
 
 }
@@ -115,7 +114,7 @@ animation-timing-function: linear;
 .cloud3 {
 margin-bottom: 400px;
 transform: translateX(-1000px);
-animation: cloud3-movement 360s -130s infinite;
+animation: cloud3-movement 360s -200s infinite;
 animation-timing-function: linear;
 
 }

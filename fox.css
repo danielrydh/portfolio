@@ -75,12 +75,13 @@
 }
 
 /* EYES EYES EYES EYES EYES EYES EYES EYES EYES */
-/* @keyframes eye-large {
-  10% { transform: scale(1.5);}
-  20% { transform: scale(1.5);}
-  30% { transform: scale(.8);}
-  40% { transform: scale(1);}
-} */
+@keyframes eye-large {
+  10% { transform: scale(1.2);}
+  20% { transform: scale(1.2);}
+  25% { transform: scale(.7);}
+  40% { transform: scale(1,1);}
+  45% { transform: scale(1);}
+}
 
 
 
@@ -100,9 +101,24 @@
 
 }
 
+/* MOUTN MOUTH MOUTH MOUTH MOUTH MOUTH MOUTH MOUTH MOUTH MOUTH MOUTH */
+
+@keyframes mouth-movment {
+
+  10% { transform: scale(1.2);}
+  20% { transform: scale(1.2);}
+  25% { transform: scale(.7);}
+  40% { transform: scale(1,1);}
+  45% { transform: scale(1);}
+
+
+}
+
+
 /* ARM ARM ARM ARM ARM ARM ARM ARM ARM */
 
 @keyframes arm-wave {
+  0% { transform: rotate(0deg);  }
   5% { transform: rotate(30deg);  }
   10% { transform: rotate(-30deg);  }
   15% { transform: rotate(30deg);  }
@@ -112,10 +128,10 @@
   35% { transform: rotate(30deg);  }
   40% { transform: rotate(-30deg);  }
   45% { transform: rotate(0deg);  }
+  100% { transform: rotate(0deg);  }
 
 
 }
-
 
 /* FOX BODY FOX BODY FOX BODY FOX BODY */
 
@@ -128,12 +144,7 @@
   80% {transform: translateY(0px) scale(1,1);}
 }
 
-
 /* LEGS LEGS LEGS LEGS LEGS LEGS LEGS LEGS LEGS LEGS LEGS */
-
-@keyframes left-leg-up {
-  50% {transform: translateY(-8px);}
-}
 
 
 /* THE FOX TRANSFORM-ORIGIN FIX. ALL ROTATE AROUND FOX MIDPOINT */
@@ -145,6 +156,13 @@ transform-origin: 100px 150px;
 
 /* THE FOX SVG GROUPS STYLES */
 
+/* MOUTN MOUTH MOUTH MOUTH MOUTH MOUTH MOUTH MOUTH MOUTH MOUTH MOUTH */
+
+.mouth {
+  transform-origin: 94px 132px;
+  animation: mouth-movment 2s infinite;
+}
+
 /* EYEBROWS EYEBROWS EYEBROWS */
 .left-eyebrow {
   animation: eyebrows-raise-left 2s ;
@@ -153,27 +171,28 @@ transform-origin: 100px 150px;
 }
 
 .right-eyebrow {
-  animation: eyebrows-raise-right 2s ;
+  animation: eyebrows-raise-right 2s  ;
   animation-iteration-count: infinite;
   transform-origin: 108px 106px;
 }
 
+
 /* EYES EYES EYES EYES EYES EYES EYES EYES */
 
 .left-eye {
-  animation: eye-large 2s infinite;
-  transform-origin: 81px 206;
+  animation: eye-large 2s  linear infinite;
+  transform-origin: 81px 106px;
 }
 
 .right-eye {
-  animation: eye-large 2s infinite;
-  transform-origin: 108px 106;
+  animation: eye-large 2s  infinite;
+  transform-origin: 108px 106px;
 }
 
 /* NOSE NOSE NOSE NOSE NOSE */
 .nose {
   transform-origin: 94px 90px;
-  animation: nose-wiggle 3s infinite;
+  animation: nose-wiggle 3s  infinite;
 }
 
 
@@ -181,18 +200,19 @@ transform-origin: 100px 150px;
 
 
 .left-arm-thumb {
-  animation: arm-wave 2s infinite;
+  transform: rotate(-60deg);
+  animation: arm-wave 2s 3s infinite;
 }
 
 .right-arm-thumb {
-  animation: arm-wave 2s infinite;
-  animation-delay: .2s;
+  transform: rotate(70deg);
+  animation: arm-wave 2s 3.2s infinite;
+   2s
 }
 
 /* MAIN BODY MAIN BODY MAIN BODY MAIN BODY */
 .body-face-ears {
-  animation: body-sway 2s infinite;
-  transform: translateY(5px);
+  animation: body-sway 2s 2s  infinite;
 }
 
 .ears {
@@ -210,22 +230,4 @@ transform-origin: 100px 150px;
 .right-ear {
   transform-origin: 94px 130px;
   animation: ear-wiggle-right 4s infinite;
-}
-
-/* ON HOVER ON HOVER ON HOVER ON HOVER ON HOVER */
-
-.fox-container:hover .left-leg-foot {
-  animation: left-leg-up .4s infinite;
-}
-
-.fox-container:hover .right-leg-foot {
-  animation: left-leg-up .4s .2s infinite;
-}
-
-.fox-container:hover .right-ear {
-  animation: right-ear-hover .4s .2s infinite;
-}
-
-.fox-container:hover .left-ear {
-  animation: left-ear-hover .4s .2s infinite;
 }

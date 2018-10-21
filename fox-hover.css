@@ -1,0 +1,120 @@
+/* LEGS LEGS LEGS LEGS LEGS LEGS LEGS LEGS LEGS LEGS LEGS */
+
+@keyframes leg-hover {
+  15% {transform: translateY(-4px) scale(1.05,.95) ;}
+  40% {transform: translateY(8px) scale(.95,1.05);}
+  80% {transform: translateY(8px) scale(.95,1.05);}
+}
+
+
+/* FOX BODY FOX BODY FOX BODY FOX BODY */
+
+
+@keyframes body-hover {
+  10% { transform:  scale(1,1.1);}
+  90% { transform:  scale(1,1.1);}
+}
+
+/* ARM ARM ARM ARM ARM ARM ARM ARM ARM */
+
+@keyframes arm-hover {
+  0% { transform: rotate(0deg);  }
+  10% { transform: rotate(50deg);  }
+  20% { transform: rotate(-50deg);  }
+  30% { transform: rotate(50deg);  }
+  40% { transform: rotate(-50deg);  }
+  50% { transform: rotate(50deg);  }
+  60% { transform: rotate(-50deg);  }
+  70% { transform: rotate(50deg);  }
+  80% { transform: rotate(-50deg);  }
+  90% { transform: rotate(0deg);  }
+
+}
+
+/* EYEBROWS EYEBROWS EYEBROWS */
+
+@keyframes eyebrows-hover {
+      0% { transform: translateY(-5px); }
+      100% { transform: translateY(-5px); }
+}
+
+@keyframes left-eyebrow-hover {
+     40% { transform: rotateZ(-30deg);}
+     80% { transform: rotateZ(30deg);}
+}
+
+@keyframes right-eyebrow-hover {
+     40% { transform: rotateZ(30deg);}
+     80% { transform: rotateZ(-30deg);}
+}
+
+/* EYES EYES EYES EYES EYES EYES EYES EYES EYES */
+@keyframes eye-hover {
+  10% { transform: scale(1.2);}
+  90% { transform: scale(1.2);}
+}
+
+/* EARS EARS EARS EARS EARS EARS */
+
+@keyframes right-ear-hover {
+  40% {transform: rotateZ(-10deg);}
+  80% {transform: rotateZ(10deg);}
+}
+
+@keyframes left-ear-hover {
+  40% {transform: rotateZ(10deg);}
+  80% {transform: rotateZ(-10deg);}
+}
+
+
+/* ON HOVER ON HOVER ON HOVER ON HOVER ON HOVER */
+
+/* LEGS LEGS LEGS LEGS LEGS LEGS LEGS LEGS LEGS LEGS LEGS */
+
+.fox-container:hover .left-leg-foot {
+  animation: leg-hover .4s infinite;
+}
+
+.fox-container:hover .right-leg-foot {
+  animation: leg-hover .4s .2s infinite;
+}
+
+/* EARS EARS EARS EARS EARS EARS */
+
+.fox-container:hover .right-ear {
+  animation: right-ear-hover .4s .2s infinite;
+}
+
+.fox-container:hover .left-ear {
+  animation: left-ear-hover .4s .2s infinite;
+}
+
+/* EYEBROWS EYEBROWS EYEBROWS */
+
+.fox-container:hover .eyebrows {
+  animation: eyebrows-hover 2s infinite;
+}
+
+.fox-container:hover .left-eyebrow {
+  animation: left-eyebrow-hover 2s infinite;
+}
+
+.fox-container:hover .right-eyebrow {
+  animation: right-eyebrow-hover 2s infinite;
+}
+
+/* EYES EYES EYES EYES EYES EYES EYES EYES EYES */
+
+.fox-container:hover .right-eye {
+  animation: eye-hover 2s infinite;
+}
+
+.fox-container:hover .left-eye {
+  animation: eye-hover 2s infinite;
+}
+
+/* FOX BODY FOX BODY FOX BODY FOX BODY */
+
+.fox-container:hover .body-face-ears {
+  animation: body-hover 2s   infinite;
+}
