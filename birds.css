@@ -1,0 +1,106 @@
+
+
+/* KEYFRAME KEYFRAME KEYFRAME KEYFRAME KEYFRAME KEYFRAME KEYFRAME KEYFRAME  */
+
+@keyframes fly-in {
+  0% {transform: translate(-200px,-100px) scale(0);}
+  40% {transform: translate(-300px,0px) scale(.5);}
+  60% {transform: translate(-350px,-150px) scale(.8);}
+
+
+}
+
+@keyframes fly-in-body {
+  0% {transform: scaleY(.6);}
+
+  60% {transform: scaleY(.8);}
+
+}
+
+@keyframes fly-in-left-wing {
+  0% { transform: rotate(0deg) ;  }
+  10% { transform: rotate(30deg);  }
+  20% { transform: rotate(-30deg);  }
+  30% { transform: rotate(30deg);  }
+  40% { transform: rotate(-30deg);  }
+  50% { transform: rotate(30deg);  }
+  60% { transform: rotate(-30deg);  }
+  70% { transform: rotate(30deg);  }
+  80% { transform: rotate(-30deg);  }
+  90% { transform: rotate(0deg);  }
+}
+
+@keyframes fly-in-right-wing {
+  0% { transform: rotate(0deg);  }
+  10% { transform: rotate(-30deg);  }
+  20% { transform: rotate(30deg);  }
+  30% { transform: rotate(-30deg);  }
+  40% { transform: rotate(30deg);  }
+  50% { transform: rotate(-30deg);  }
+  60% { transform: rotate(30deg);  }
+  70% { transform: rotate(-30deg);  }
+  80% { transform: rotate(30deg);  }
+  90% { transform: rotate(0deg);  }
+}
+
+.bird1-container {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  transform: translate(-300px,55px);
+
+  animation: fly-in 5s;
+  animation-timing-function: linear;
+  animation-play-state: paused;
+}
+
+.bird-body-legs {
+  animation: fly-in-body 5s;
+  animation-timing-function: linear;
+  animation-play-state: paused;
+
+}
+
+.bird-left-wing-g {
+  animation: fly-in-left-wing 5s;
+  animation-timing-function: linear;
+  animation-play-state: paused;
+  transform-origin: 195px 189px;
+
+}
+
+.bird-right-wing-g {
+  animation: fly-in-right-wing 5s;
+  animation-timing-function: linear;
+  animation-play-state: paused;
+  transform-origin: 195px 189px;
+
+}
+
+/* WINGS WINGS WINGS WINGS WINGS WINGS WINGS WINGS WINGS WINGS WINGS WINGS */
+
+.scene:hover .bird1-container {
+ animation-play-state: running;
+}
+
+.scene:hover .bird-body-legs {
+ animation-play-state: running;
+}
+
+.scene:hover .bird-left-wing-g {
+ animation-play-state: running;
+}
+
+.scene:hover .bird-right-wing-g {
+ animation-play-state: running;
+}
+
+/* .bird-left-wing {
+  animation: fly-in-left-wing 1s infinite;
+  transform-origin: 195px 189px;
+}
+
+.bird-right-wing {
+  animation: fly-in-right-wing 1s infinite;
+  transform-origin: 195px 189px;
+} */

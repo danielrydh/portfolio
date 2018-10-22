@@ -10,6 +10,9 @@ body {
 
 }
 
+.one {
+  display: none;
+}
 
 .scene {
   width: 90%;
@@ -60,8 +63,4 @@ position: absolute;
 margin-left: 110px;
 margin-top: 250px;
 
-}
-
-.mountain {
-  stroke: #f2f2f2;
 }
