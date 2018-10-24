@@ -64,3 +64,27 @@ margin-left: 110px;
 margin-top: 250px;
 
 }
+
+
+.opening-container {
+  width: 1500px;
+  position: absolute;
+  transform: translateY(-1000px);
+  animation: opening-container 6s;
+}
+
+@keyframes opening {
+  0% {transform: scale(2) }
+  50% {transform: scale(1) }
+  100% {transform: scale(11); opacity: 1;}
+}
+
+@keyframes opening-container {
+  0% {transform: translateY(-50px);}
+  100% {transform: translateY(-50px);}
+
+}
+
+.opening {
+  animation: opening 6s;
+}

@@ -1,123 +1,67 @@
 
-  /* BIRD ON THE GROUND   BIRD ON THE GROUND    BIRD ON THE GROUND    BIRD ON THE GROUND  */
-  @keyframes bird-eye-large {
-    10% { transform: scale(1.2);}
-    20% { transform: scale(1.2);}
-    25% { transform: scale(.7);}
-    40% { transform: scale(1,1);}
-    45% { transform: scale(1);}
-  }
-
-  @keyframes bird-leg {
-    5% {transform: translateY(-2px) scale(1.05,.95) ;}
-
-    10% {transform: translateY(4px) scale(.95,1.05);}
-    40% {transform: translateY(4px) scale(.95,1.05);}
-    45% {transform: translateY(-2px) scale(1.05,.95) ;}
-    55% {transform: translateY(0px) scale(1);}
-  }
-
-  @keyframes beak-wiggle {
-    10% {transform: translateY(-2px);}
-    20% {transform: translateY(0px);}
-    35% { transform: rotate(11deg);  }
-    40% { transform: rotate(-11deg);  }
-    45% { transform: rotate(11deg); }
-    50% { transform: rotate(-11deg);  }
-    55% { transform: rotate(11deg);  }
-    60% { transform: rotate(-11deg); }
-    65% { transform: rotate(11deg); }
-    70% { transform: rotate(0deg); }
-  }
-
-@keyframes bird-eyebrows {
-  10% { transform: translateY(-5px); }
-  20% { transform: translateY(-5px); }
-  30% { transform: translateY(3px);}
-  40% { transform: translateY(0px); }
-
-}
-
-@keyframes bird-head {
-  20% {transform: scale(1.1);}
-  40% {transform: scale(1);}
-  60% {transform: scale(1.1);}
-  80% {transform: scale(1);}
-
-
-}
-
-
 /* FLY IN EVENT FLY IN EVENT FLY IN EVENT FLI IN EVENT FLY IN EVENT */
-.bird1-container {
-  width: 200px;
-  height: 200px;
+.bird2-container {
+  width: 180px;
+  height: 180px;
   position: absolute;
-  transform: translate(-250px,90px);
+  transform: translate(310px,60px);
 }
 
-@keyframes hover-flight {
-  10%{transform: translate(-250px,90px);}
 
-  30%{transform: translate(-250px,40px);}
-  45%{transform: translate(-250px,40px);}
-  60%{transform: translate(-250px,90px);}
-}
-
-.bird-wings {
+.bird2-wings {
   transform: translateY(29px);
 }
 
-.bird-left-wing {
+.bird2-left-wing {
   transform: rotate(-60deg) scale(.3);
   transform-origin: 180px 189px;
 
 }
 
-.bird-right-wing {
+.bird2-right-wing {
   transform: rotate(60deg) scale(.3);
   transform-origin: 200px 189px;
 
 }
 
-.bird-beak {
+.bird2-beak {
   transform-origin: 195px 189px;
   animation: beak-wiggle 2s infinite;
 }
 
-.bird-left-eye {
+.bird2-left-eye {
   transform-origin: 179px 176px;
-  animation: bird-eye-large 3s infinite;
+  animation: bird-eye-large 4s infinite;
 }
 
-.bird-right-eye {
+.bird2-right-eye {
   transform-origin: 209px 176px;
-  animation: bird-eye-large 3s infinite;
+  animation: bird-eye-large 4s infinite;
 }
 
-.bird-eyebrows {
-  animation:bird-eyebrows 3s infinite ;
+.bird2-eyebrows {
+  animation:bird-eyebrows 4s infinite ;
   transform-origin: 195px 189px;
 }
 
 
-  .bird-body-head {
-    animation: body-sway 1s infinite;
+  .bird2-body-head {
+    animation: body-sway 1.5s infinite;
     transform-origin: 195px 189px;
   }
 
-  .bird-head-face {
-    animation: bird-head 1s infinite;
+  .bird2-head-face {
+    animation: bird-head 1.5s infinite;
     transform-origin: 195px 189px;
   }
 
-  .bird-left-leg {
-    animation: bird-leg 5s infinite;
+  .bird2-left-leg {
+    animation: bird-leg 3s infinite;
     transform-origin: 195px 189px;
   }
 
-  .bird-right-leg {
-    animation: bird-leg 5s 2.5s infinite;
+  .bird2-right-leg {
+    animation: bird-leg 3s 1.5s infinite;
     transform-origin: 195px 189px;
   }
 
@@ -152,7 +96,13 @@
   60% {transform: rotate(50deg) ;}
 }
 
+@keyframes bird2-hover-flight {
+  10%{transform: translate(310px,60px);}
 
+  30%{transform: translate(310px,20px);}
+  45%{transform: translate(310px,20px);}
+  60%{transform: translate(310px,60px);}
+}
 
 @keyframes bird-leg-hover {
   10%{transform: translateY(-5px);}
@@ -183,77 +133,73 @@
   60%{transform:scale(1.1,.9); }
 }
 
-.bird1-container:hover .bird-left-wing {
+.bird2-container:hover .bird2-left-wing {
   animation: wing-flap 2s infinite;
 
 }
 
-.bird1-container:hover .bird-right-wing {
+.bird2-container:hover .bird2-right-wing {
   animation: wing-flap-right 2s infinite;
 
 }
 
-.bird1-container:hover {
-  animation: hover-flight 2s infinite;
+.bird2-container:hover {
+  animation: bird2-hover-flight 2s infinite;
   transform-origin: 195px 189px;
 }
 
-.bird1-container:hover .bird-left-leg{
+.bird2-container:hover .bird2-left-leg{
   animation: bird-leg-hover 2s infinite;
 
 }
 
-.bird1-container:hover .bird-right-leg{
+.bird2-container:hover .bird2-right-leg{
   animation: bird-leg-hover 2s infinite;
 
 }
 
-.bird1-container:hover .bird-left-eye {
+.bird2-container:hover .bird2-left-eye {
   animation: bird-eye-hover 2s infinite;
 
 }
 
-.bird1-container:hover .bird-right-eye {
+.bird2-container:hover .bird2-right-eye {
   animation: bird-eye-hover 2s infinite;
 
 }
 
-.bird1-container:hover .bird-eyebrows {
+.bird2-container:hover .bird2-eyebrows {
   animation: bird-eyebrows-hover 2s infinite;
 
 }
 
-.bird1-container:hover .bird-body-head {
+.bird2-container:hover .bird2-body-head {
   animation: bird-body-hover 2s infinite;
 }
 
 /* FLY IN FLY IN FLY IN FLY IN FLY IN FLY IN FLY IN FLY IN FLY IN FLY IN FLY IN FLY IN */
 
-@keyframes fly-in {
-  0% {transform: translate(-280px,-550px);}
+
+@keyframes fly-in-bird2 {
+  0% {transform: translate(400px,-500px);}
+  20% {transform: translate(400px,-500px);}
 }
 
-
-
-@keyframes wing-flap-fly-in {
-  10% {transform: rotate(-50deg);}
-  15% {transform: rotate(50deg) ;}
-  20% {transform: rotate(-50deg) ;}
-  25% {transform: rotate(50deg) ;}
-  30% {transform: rotate(-50deg) ;}
+@keyframes bird2-wing-flap-fly-in {
+  30% {transform: rotate(-50deg);}
   35% {transform: rotate(50deg) ;}
   40% {transform: rotate(-50deg) ;}
   45% {transform: rotate(50deg) ;}
   50% {transform: rotate(-50deg) ;}
   55% {transform: rotate(50deg) ;}
   60% {transform: rotate(-50deg) ;}
+  65% {transform: rotate(50deg) ;}
+  70% {transform: rotate(-50deg) ;}
+  75% {transform: rotate(50deg) ;}
+  80% {transform: rotate(-50deg) ;}
 }
 
-@keyframes wing-flap-right-fly-in {
-  10% {transform: rotate(50deg) ;}
-  15% {transform: rotate(-50deg) ;}
-  20% {transform: rotate(50deg) ;}
-  25% {transform: rotate(-50deg) ;}
+@keyframes bird2-wing-flap-right-fly-in {
   30% {transform: rotate(50deg) ;}
   35% {transform: rotate(-50deg) ;}
   40% {transform: rotate(50deg) ;}
@@ -261,34 +207,38 @@
   50% {transform: rotate(50deg) ;}
   55% {transform: rotate(-50deg) ;}
   60% {transform: rotate(50deg) ;}
+  65% {transform: rotate(-50deg) ;}
+  70% {transform: rotate(50deg) ;}
+  75% {transform: rotate(-50deg) ;}
+  80% {transform: rotate(50deg) ;}
 }
 
-.bird1 {
-  animation: fly-in 2.2s;
+.bird2 {
+  animation: fly-in-bird2 2.5s ;
   animation-play-state: paused;
 }
 
 
-.scene:hover .bird1 {
+.scene:hover .bird2 {
   animation-play-state: running;
 }
 
 
-.bird-left-wing {
-  animation: wing-flap-fly-in 3s;
+.bird2-left-wing {
+  animation: bird2-wing-flap-fly-in 2.5s;
   animation-play-state: paused;
   transform-origin: 180px 189px;
 }
 
-.bird-right-wing {
-  animation: wing-flap-right-fly-in 3s;
+.bird2-right-wing {
+  animation: bird2-wing-flap-right-fly-in 2.5s;
   animation-play-state: paused;
 }
 
-.scene:hover .bird-left-wing {
+.scene:hover .bird2-left-wing {
   animation-play-state: running;
 }
 
-.scene:hover .bird-right-wing {
+.scene:hover .bird2-right-wing {
   animation-play-state: running;
 }
