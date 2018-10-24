@@ -8,6 +8,7 @@
   perspective: 700px;
   position: absolute;
   z-index: 100;
+  transform: translateY(30px);
 }
 
 /* KEYFRAMES FOR FOX ANIMATION */
