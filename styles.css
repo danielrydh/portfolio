@@ -6,6 +6,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: black;
 
 
 }
@@ -15,8 +16,8 @@ body {
 }
 
 .scene {
-  width: 90%;
-  height: 700px;
+  width: 90vw;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,6 +26,7 @@ body {
   border: 3px solid black;
   border-radius: 20px;
   position: relative;
+  margin-top: 10px;
 
 }
 

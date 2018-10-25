@@ -166,31 +166,31 @@
 }
 
 .bird2 {
-  animation: fly-wait-bird2 6.5s, fly-in-bird2 2.5s 6.5s;
+  animation: fly-wait-bird2 7s, fly-in-bird2 2.5s 7s;
   animation-play-state: paused;
 }
 
 
-.scene:hover .bird2 {
+ .bird2 {
   animation-play-state: running;
 }
 
 
 .bird2-left-wing {
-  animation: bird2-wing-flap-fly-in 2.5s 6.5s;
+  animation: bird2-wing-flap-fly-in 2.5s 7s;
   animation-play-state: paused;
   transform-origin: 180px 189px;
 }
 
 .bird2-right-wing {
-  animation: bird2-wing-flap-right-fly-in 2.5s 6.5s;
+  animation: bird2-wing-flap-right-fly-in 2.5s 7s;
   animation-play-state: paused;
 }
 
-.scene:hover .bird2-left-wing {
+ .bird2-left-wing {
   animation-play-state: running;
 }
 
-.scene:hover .bird2-right-wing {
+ .bird2-right-wing {
   animation-play-state: running;
 }
