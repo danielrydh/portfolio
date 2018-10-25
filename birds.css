@@ -231,12 +231,10 @@
 
 @keyframes fly-in {
   0% {transform: translate(-280px,-550px);}
+  80% {transform: translate(-280px,-550px);}
 }
 
-@keyframes fly-wait {
-  0% {transform: translate(-280px,-550px);}
-  100% {transform: translate(-280px,-550px);}
-}
+
 
 
 
@@ -269,7 +267,7 @@
 }
 
 .bird1 {
-  animation: fly-wait 7s, fly-in 2.2s 7s ;
+  animation: fly-in 9.2s  ;
   animation-play-state: paused;
 }
 

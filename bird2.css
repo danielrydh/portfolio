@@ -128,14 +128,10 @@
 
 @keyframes fly-in-bird2 {
   0% {transform: translate(400px,-500px);}
-  20% {transform: translate(400px,-500px);}
+  80% {transform: translate(400px,-500px);}
 
 }
 
-@keyframes fly-wait-bird2 {
-  0% {transform: translate(400px,-500px);}
-  100% {transform: translate(400px,-500px);}
-}
 
 @keyframes bird2-wing-flap-fly-in {
   30% {transform: rotate(-50deg);}
@@ -166,7 +162,7 @@
 }
 
 .bird2 {
-  animation: fly-wait-bird2 7s, fly-in-bird2 2.5s 7s;
+  animation:  fly-in-bird2 9.5s;
   animation-play-state: paused;
 }
 

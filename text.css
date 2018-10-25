@@ -4,6 +4,12 @@
   100% {opacity: 0;}
 }
 
+@keyframes menu-fade-in {
+  0% {opacity: 0;}
+  80% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
 h1 {
   position: absolute;
   color: white;
@@ -38,4 +44,30 @@ P {
   animation: intro-text-fade 5.2s;
   transform: translateY(-120px);
 
+}
+
+
+.menu {
+
+  position: absolute;
+  width: 90%;
+  justify-content: space-between;
+  /* background: blue; */
+  display: flex;
+  align-self: flex-start;
+
+}
+
+button {
+  color: white;
+  font-family: 'Amatic SC', cursive;
+  font-size: 80px;
+  animation: menu-fade-in 11.5s;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+button:hover {
+  background: red;
 }
