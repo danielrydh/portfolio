@@ -233,6 +233,11 @@
   0% {transform: translate(-280px,-550px);}
 }
 
+@keyframes fly-wait {
+  0% {transform: translate(-280px,-550px);}
+  100% {transform: translate(-280px,-550px);}
+}
+
 
 
 @keyframes wing-flap-fly-in {
@@ -264,7 +269,7 @@
 }
 
 .bird1 {
-  animation: fly-in 2.2s;
+  animation: fly-wait 6.5s, fly-in 2.2s 6.5s ;
   animation-play-state: paused;
 }
 
@@ -275,13 +280,13 @@
 
 
 .bird-left-wing {
-  animation: wing-flap-fly-in 3s;
+  animation: wing-flap-fly-in 3s 6.5s ;
   animation-play-state: paused;
   transform-origin: 180px 189px;
 }
 
 .bird-right-wing {
-  animation: wing-flap-right-fly-in 3s;
+  animation: wing-flap-right-fly-in 3s 6.5s ;
   animation-play-state: paused;
 }
 

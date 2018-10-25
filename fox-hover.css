@@ -50,8 +50,8 @@
 
 /* EYES EYES EYES EYES EYES EYES EYES EYES EYES */
 @keyframes eye-hover {
-  10% { transform: scale(1.2);}
-  90% { transform: scale(1.2);}
+  10% { transform: scale(1.2);stroke-width: 2px}
+  90% { transform: scale(1.2);stroke-width: 2px}
 }
 
 /* EARS EARS EARS EARS EARS EARS */
@@ -96,11 +96,11 @@
 }
 
 .fox-container:hover .left-eyebrow {
-  animation: left-eyebrow-hover 2s infinite;
+  animation: left-eyebrow-hover .7s infinite;
 }
 
 .fox-container:hover .right-eyebrow {
-  animation: right-eyebrow-hover 2s infinite;
+  animation: right-eyebrow-hover .7s infinite;
 }
 
 /* EYES EYES EYES EYES EYES EYES EYES EYES EYES */
