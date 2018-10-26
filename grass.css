@@ -4,18 +4,15 @@
 .grass1-container {
   width: 1500px;
 position: absolute;
-margin-left: 10px;
-margin-top: 235px;
 
+transform: translate(10px,235px);
 
 }
 
 .grass2-container {
   width: 1550px;
 position: absolute;
-margin-left: 10px;
-margin-top: 245px;
-transform: rotateY(180deg);
+transform: rotateY(180deg) translate(10px,245px);
 
 }
 

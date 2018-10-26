@@ -50,8 +50,13 @@
 
 /* EYES EYES EYES EYES EYES EYES EYES EYES EYES */
 @keyframes eye-hover {
+<<<<<<< HEAD
   10% { transform: scale(1.2); stroke-width: 2;}
   90% { transform: scale(1.2); stroke-width: 2;}
+=======
+  10% { transform: scale(1.2);stroke-width: 2px}
+  90% { transform: scale(1.2);stroke-width: 2px}
+>>>>>>> 3ccb63353ea09bc8d8b08ab7d5a809471e357c25
 }
 
 /* EARS EARS EARS EARS EARS EARS */
@@ -96,11 +101,11 @@
 }
 
 .fox-container:hover .left-eyebrow {
-  animation: left-eyebrow-hover 2s infinite;
+  animation: left-eyebrow-hover .7s infinite;
 }
 
 .fox-container:hover .right-eyebrow {
-  animation: right-eyebrow-hover 2s infinite;
+  animation: right-eyebrow-hover .7s infinite;
 }
 
 /* EYES EYES EYES EYES EYES EYES EYES EYES EYES */

@@ -1,32 +1,33 @@
 
+
 /* GENERAL STYLES FOR THE PAGE */
+.scene {
+  width: 1350px;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1A1A1A;
+  overflow: hidden;
+  border: 3px solid black;
+  border-radius: 20px;
+  position: relative;
+  margin-top: 10px;
+
+}
+
+
 
 
 body {
   display: flex;
   justify-content: center;
   align-items: center;
-
-
+  background: black;
 }
 
-.one {
-  display: none;
-}
 
-.scene {
-  width: 90%;
-  height: 700px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: red;
-  overflow: hidden;
-  border: 3px solid black;
-  border-radius: 20px;
-  position: relative;
 
-}
 
 .sky-container {
   /* background: red; */
@@ -60,8 +61,9 @@ body {
 .ground-container {
   width: 1700px;
 position: absolute;
-margin-left: 110px;
-margin-top: 250px;
+/* margin-left: 110px;
+margin-top: 250px; */
+transform: translate(110px,250px);
 
 }
 
@@ -70,22 +72,26 @@ margin-top: 250px;
   width: 1500px;
   position: absolute;
   transform: translateY(-1000px);
-  animation: opening-container 6s;
+  animation: opening-container 8s;
 }
 
 @keyframes opening {
   0% {transform: scale(2) }
-  50% {transform: scale(1) }
-  80% {transform: scale(11); opacity: 1;}
-  100% {transform: scale(11); opacity: 1;}
+  50% {transform: scale(1.2) }
+  100% {transform: scale(11);}
+}
+
+@keyframes opening-wait {
+  0% {transform: scale(2); }
+  100% {transform: scale(2); }
 }
 
 @keyframes opening-container {
-  0% {transform: translateY(-50px);}
-  100% {transform: translateY(-50px);}
+  0% {transform: translate(-10px,-50px);}
+  100% {transform: translate(-10px,-50px);}
 
 }
 
 .opening {
-  animation: opening 6s;
+  animation: opening-wait 2s, opening 6s 2s;
 }

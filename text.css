@@ -1,0 +1,73 @@
+@keyframes intro-text-fade {
+  0% {opacity: 1;}
+  80% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+@keyframes menu-fade-in {
+  0% {opacity: 0;}
+  80% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+h1 {
+  position: absolute;
+  color: white;
+  font-family: 'Amatic SC', cursive;
+  align-self: flex-start;
+  font-size: 80px;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: intro-text-fade 5.2s;
+
+}
+
+h2 {
+  position: absolute;
+  color: white;
+  font-family: 'Amatic SC', cursive;
+  align-self: flex-end;
+  font-size: 60px;
+  opacity: 0;
+  animation: intro-text-fade 5.2s;
+  transform: translateY(-200px);
+
+}
+
+P {
+  position: absolute;
+  color: white;
+  font-family: 'Amatic SC', cursive;
+  align-self: flex-end;
+  font-size: 40px;
+  opacity: 0;
+  animation: intro-text-fade 5.2s;
+  transform: translateY(-120px);
+
+}
+
+
+.menu {
+
+  position: absolute;
+  width: 90%;
+  justify-content: space-between;
+  /* background: blue; */
+  display: flex;
+  align-self: flex-start;
+
+}
+
+button {
+  color: white;
+  font-family: 'Amatic SC', cursive;
+  font-size: 80px;
+  animation: menu-fade-in 11.5s;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+button:hover {
+  background: red;
+}
