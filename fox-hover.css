@@ -50,8 +50,8 @@
 
 /* EYES EYES EYES EYES EYES EYES EYES EYES EYES */
 @keyframes eye-hover {
-  10% { transform: scale(1.2);}
-  90% { transform: scale(1.2);}
+  10% { transform: scale(1.2); stroke-width: 2;}
+  90% { transform: scale(1.2); stroke-width: 2;}
 }
 
 /* EARS EARS EARS EARS EARS EARS */
