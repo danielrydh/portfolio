@@ -2,39 +2,39 @@
 /* KEYFRAMES KEYFRAMES KEYFRAMES KEYFRAMES KEYFRAMES KEYFRAMES KEYFRAMES KEYFRAMES  */
 
 @keyframes cloud1-movement {
-  100%{ transform: translateX(-1000px) translateY(10px);}
+  100%{ transform: translateX(-1000px) translateY(10px) translateZ(0);}
 
 }
 
 @keyframes cloud2-movement {
 
-  100%{ transform: translateX(-1000px)}
+  100%{ transform: translateX(-1000px) translateZ(0);}
 
 }
 
 @keyframes cloud3-movement {
 
-  100%{ transform: translateX(1000px);}
+  100%{ transform: translateX(1000px)translateZ(0);}
 
 }
 
 @keyframes cloud4-movement {
   0% {opacity: 0}
   20% {opacity: 1}
-  100%{transform: translateX(-1200px);}
+  100%{transform: translateX(-1200px)translateZ(0);}
 
 }
 
 @keyframes cloud5-movement {
   0% {opacity: 0}
   10% {opacity: 1}
-  100%{ transform: translateX(1200px);}
+  100%{ transform: translateX(1200px)translateZ(0);}
 
 }
 
 @keyframes cloud6-movement {
 
-  100%{transform: translateX(2500px);}
+  100%{transform: translateX(2500px)translateZ(0);}
 
 }
 
@@ -42,7 +42,7 @@
 @keyframes cloud7-movement {
   0% {opacity: 0}
   20%{opacity: 1}
-  100%{transform: translateX(-1800px);}
+  100%{transform: translateX(-1800px)translateZ(0);}
 
 }
 

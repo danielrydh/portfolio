@@ -5,16 +5,16 @@
     20% { transform: scale(1.2);}
     25% { transform: scale(.7);}
     40% { transform: scale(1,1);}
-    45% { transform: scale(1);}
+    45% { transform: scale(1)translateZ(0);}
   }
 
   @keyframes bird-leg {
-    5% {transform: translateY(-2px) scale(1.05,.95) ;}
+    5% {transform: translateY(-2px) scale(1.05,.95);}
 
     10% {transform: translateY(4px) scale(.95,1.05);}
     40% {transform: translateY(4px) scale(.95,1.05);}
     45% {transform: translateY(-2px) scale(1.05,.95) ;}
-    55% {transform: translateY(0px) scale(1);}
+    55% {transform: translateY(0px) scale(1)translateZ(0);}
   }
 
   @keyframes beak-wiggle {
@@ -27,14 +27,14 @@
     55% { transform: rotate(11deg);  }
     60% { transform: rotate(-11deg); }
     65% { transform: rotate(11deg); }
-    70% { transform: rotate(0deg); }
+    70% { transform: rotate(0deg)translateZ(0); }
   }
 
 @keyframes bird-eyebrows {
   10% { transform: translateY(-5px); }
   20% { transform: translateY(-5px); }
   30% { transform: translateY(3px);}
-  40% { transform: translateY(0px); }
+  40% { transform: translateY(0px)translateZ(0); }
 
 }
 
@@ -42,7 +42,7 @@
   20% {transform: scale(1.1);}
   40% {transform: scale(1);}
   60% {transform: scale(1.1);}
-  80% {transform: scale(1);}
+  80% {transform: scale(1)translateZ(0);}
 
 
 }
@@ -61,7 +61,7 @@
 
   30%{transform: translate(-250px,40px);}
   45%{transform: translate(-250px,40px);}
-  60%{transform: translate(-250px,90px);}
+  60%{transform: translate(-250px,90px)translateZ(0);}
 }
 
 .bird-wings {
@@ -135,7 +135,7 @@
   45% {transform: rotate(50deg) ;}
   50% {transform: rotate(-50deg) ;}
   55% {transform: rotate(50deg) ;}
-  60% {transform: rotate(-50deg) ;}
+  60% {transform: rotate(-50deg)translateZ(0) ;}
 }
 
 @keyframes wing-flap-right {
@@ -149,7 +149,7 @@
   45% {transform: rotate(-50deg) ;}
   50% {transform: rotate(50deg) ;}
   55% {transform: rotate(-50deg) ;}
-  60% {transform: rotate(50deg) ;}
+  60% {transform: rotate(50deg)translateZ(0) ;}
 }
 
 
@@ -158,21 +158,21 @@
   10%{transform: translateY(-5px);}
   30%{transform: translateY(20px);}
   45%{transform: translateY(20px);}
-  60%{transform: translateY(-5px);}
+  60%{transform: translateY(-5px)translateZ(0);}
 }
 
 @keyframes bird-eye-hover {
  10% {transform: scale(.9); stroke-width: 4px;}
  30% {transform: scale(1.3); stroke-width: 3px;}
  45% {transform: scale(1.3); stroke-width: 3px;}
- 60% {transform: scale(.9); stroke-width: 4px;}
+ 60% {transform: scale(.9)translateZ(0); stroke-width: 4px;}
 }
 
 @keyframes bird-eyebrows-hover {
  10% {transform: translateY(2px); stroke-width: 6px; }
  30% {transform: translateY(-8px); stroke-width: 6px; }
  45% {transform: translateY(-8px); stroke-width: 6px ;}
- 60% {transform: translateY(2px); stroke-width: 6px; }
+ 60% {transform: translateY(2px)translateZ(0); stroke-width: 6px; }
 }
 
 
@@ -180,7 +180,7 @@
   10%{transform: scale(1.2,.9); }
   30%{transform:scale(.9,1.2); }
   45%{transform:scale(.9,1.2); }
-  60%{transform:scale(1.1,.9); }
+  60%{transform:scale(1.1,.9)translateZ(0); }
 }
 
 .bird1-container:hover .bird-left-wing {
@@ -231,7 +231,7 @@
 
 @keyframes fly-in {
   0% {transform: translate(-280px,-550px);}
-  80% {transform: translate(-280px,-550px);}
+  80% {transform: translate(-280px,-550px)translateZ(0);}
 }
 
 
@@ -249,11 +249,11 @@
   45% {transform: rotate(50deg) ;}
   50% {transform: rotate(-50deg) ;}
   55% {transform: rotate(50deg) ;}
-  60% {transform: rotate(-50deg) ;}
+  60% {transform: rotate(-50deg)translateZ(0) ;}
 }
 
 @keyframes wing-flap-right-fly-in {
-  10% {transform: rotate(50deg) ;}
+  10% {transform: rotate(50deg);}
   15% {transform: rotate(-50deg) ;}
   20% {transform: rotate(50deg) ;}
   25% {transform: rotate(-50deg) ;}
@@ -263,7 +263,7 @@
   45% {transform: rotate(-50deg) ;}
   50% {transform: rotate(50deg) ;}
   55% {transform: rotate(-50deg) ;}
-  60% {transform: rotate(50deg) ;}
+  60% {transform: rotate(50deg) translateZ(0);}
 }
 
 .bird1 {
