@@ -9,7 +9,7 @@
   }
 
   @keyframes bird-leg {
-    5% {transform: translateY(-2px) scale(1.05,.95) ;}
+    5% {transform: translateY(-2px) scale(1.05,.95);}
 
     10% {transform: translateY(4px) scale(.95,1.05);}
     40% {transform: translateY(4px) scale(.95,1.05);}
@@ -253,7 +253,7 @@
 }
 
 @keyframes wing-flap-right-fly-in {
-  10% {transform: rotate(50deg) ;}
+  10% {transform: rotate(50deg);}
   15% {transform: rotate(-50deg) ;}
   20% {transform: rotate(50deg) ;}
   25% {transform: rotate(-50deg) ;}

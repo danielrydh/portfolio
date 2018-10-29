@@ -2,13 +2,13 @@
 /* KEYFRAMES KEYFRAMES KEYFRAMES KEYFRAMES KEYFRAMES KEYFRAMES KEYFRAMES KEYFRAMES  */
 
 @keyframes cloud1-movement {
-  100%{ transform: translateX(-1000px) translateY(10px);}
+  100%{ transform: translateX(-1000px) translateY(10px) ;}
 
 }
 
 @keyframes cloud2-movement {
 
-  100%{ transform: translateX(-1000px)}
+  100%{ transform: translateX(-1000px) ;}
 
 }
 

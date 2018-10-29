@@ -1,3 +1,8 @@
+body {
+  font-family: 'Amatic SC', cursive;
+}
+
+
 @keyframes intro-text-fade {
   0% {opacity: 1;}
   80% {opacity: 1;}
@@ -10,64 +15,131 @@
   100% {opacity: 1;}
 }
 
-h1 {
-  position: absolute;
-  color: white;
-  font-family: 'Amatic SC', cursive;
-  align-self: flex-start;
-  font-size: 80px;
+.intro-text {
   opacity: 0;
-  transform: translateY(-20px);
   animation: intro-text-fade 5.2s;
-
 }
 
-h2 {
+h1.intro-text {
   position: absolute;
   color: white;
-  font-family: 'Amatic SC', cursive;
+  align-self: flex-start;
+  font-size: 80px;
+  transform: translateY(-20px);
+}
+
+h2.intro-text {
+  position: absolute;
+  color: white;
   align-self: flex-end;
   font-size: 60px;
-  opacity: 0;
-  animation: intro-text-fade 5.2s;
   transform: translateY(-200px);
 
 }
 
-P {
+P.intro-text {
   position: absolute;
   color: white;
-  font-family: 'Amatic SC', cursive;
   align-self: flex-end;
   font-size: 40px;
-  opacity: 0;
-  animation: intro-text-fade 5.2s;
   transform: translateY(-120px);
 
 }
 
 
-.menu {
+/* FOX FOX FOX FOX FOX FOX FOX FOX FOX FOX FOX FOX FOX FOX FOX FOX FOX  */
 
+.fox-text {
   position: absolute;
-  width: 90%;
-  justify-content: space-between;
-  /* background: blue; */
-  display: flex;
-  align-self: flex-start;
+  /* width: 50vw; */
+  background: hsla(0, 0%, 0%, 0.9);
+  transform: translate(0px,200px) scale(0);
+  transition: transform .7s cubic-bezier(.6,.25,.48,1.36);
+  border-radius: 50px;
 
 }
 
-button {
+.fox-container:hover .fox-text{
+
+transform:translate(0px,-20px) scale(1); 
+}
+
+
+
+.fox-text p {
+  font-size: 30px;
   color: white;
-  font-family: 'Amatic SC', cursive;
-  font-size: 80px;
-  animation: menu-fade-in 11.5s;
-  padding: 0;
-  border: none;
-  background: none;
+  margin: auto;
+  font-weight: 700;
+  padding: 20px;
+
 }
 
-button:hover {
-  background: red;
+/* BIRD ONE TEXT BIRD ONE TEXT BIRD ONE TEXT BIRD ONE TEXT BIRD ONE TEXT BIRD ONE TEXT BIRD ONE TEXT */
+
+.bird1-text {
+  position: absolute;
+  /* width: 50vw; */
+  background: hsla(0, 0%, 0%, 0.9);
+  transform: translate(0px,-500px);
+  transition: transform 1s cubic-bezier(.6,.25,.48,1.36);
+
+
+}
+
+.bird1-container:hover .bird1-text{
+
+transform:translate(0px,-100px); ;
+}
+
+
+
+.bird1-text p {
+  font-size: 30px;
+  color: white;
+  margin: auto;
+  font-weight: 700;
+
+}
+
+/* BIRD TWO TEXT BIRD TWO TEXT BIRD TWO TEXT BIRD TWO TEXT BIRD TWO TEXT BIRD TWO TEXT*/
+
+.bird2-text {
+  position: absolute;
+  /* width: 50vw; */
+  background: hsla(0, 0%, 0%, 0.9);
+  transform: translate(0px,-500px);
+  transition: transform 1s cubic-bezier(.6,.25,.48,1.36);
+
+
+}
+
+.bird2-container:hover .bird2-text{
+
+transform:translate(0px,-100px); ;
+}
+
+
+
+.bird2-text p {
+  font-size: 30px;
+  color: white;
+  margin: auto;
+  font-weight: 700;
+
+}
+
+/* LINKS LINKS LINKS LINKS LINKS LINKS LINKS LINKS LINKS LINKS LINKS LINKS LINKS LINKS LINKS */
+
+
+a {
+    position: absolute;
+    color: red;
+    align-self: flex-start;
+    font-size: 80px;
+  }
+
+a:hover {
+  background: white;
+  border-radius: 20px;
 }
