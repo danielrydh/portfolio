@@ -54,14 +54,14 @@ P.intro-text {
   /* width: 50vw; */
   background: hsla(0, 0%, 0%, 0.9);
   transform: translate(0px,200px) scale(0);
-  transition: transform .7s cubic-bezier(.6,.25,.48,1.36);
+  transition: transform .5s cubic-bezier(.6,.25,.48,1.36);
   border-radius: 50px;
 
 }
 
 .fox-container:hover .fox-text{
 
-transform:translate(0px,-20px) scale(1); 
+transform:translate(0px,-20px) scale(1);
 }
 
 
@@ -81,15 +81,16 @@ transform:translate(0px,-20px) scale(1);
   position: absolute;
   /* width: 50vw; */
   background: hsla(0, 0%, 0%, 0.9);
-  transform: translate(0px,-500px);
-  transition: transform 1s cubic-bezier(.6,.25,.48,1.36);
+  transform: translate(0px,40px) scale(0);
+  transition: transform .5s cubic-bezier(.6,.25,.48,1.36);
+  border-radius: 50px;
 
 
 }
 
 .bird1-container:hover .bird1-text{
 
-transform:translate(0px,-100px); ;
+transform:translate(0px,-150px) scale(1) ;
 }
 
 
@@ -99,6 +100,7 @@ transform:translate(0px,-100px); ;
   color: white;
   margin: auto;
   font-weight: 700;
+  padding: 20px;
 
 }
 
@@ -106,17 +108,18 @@ transform:translate(0px,-100px); ;
 
 .bird2-text {
   position: absolute;
-  /* width: 50vw; */
+  width: 400px;
   background: hsla(0, 0%, 0%, 0.9);
-  transform: translate(0px,-500px);
-  transition: transform 1s cubic-bezier(.6,.25,.48,1.36);
+  transform: translate(-100px,30px) scale(0);
+  transition: transform .5s cubic-bezier(.6,.25,.48,1.36);
+  border-radius: 50px;
 
 
 }
 
 .bird2-container:hover .bird2-text{
 
-transform:translate(0px,-100px); ;
+transform:translate(-100px,-150px) scale(1) ;
 }
 
 
@@ -126,6 +129,7 @@ transform:translate(0px,-100px); ;
   color: white;
   margin: auto;
   font-weight: 700;
+  padding: 20px;
 
 }
 
@@ -134,12 +138,22 @@ transform:translate(0px,-100px); ;
 
 a {
     position: absolute;
-    color: red;
     align-self: flex-start;
-    font-size: 80px;
+    font-size: 30px;
+    text-decoration: none;
+    background: white;
+    border-radius: 20px;
+    animation: menu-fade-in 11.5s;
+    transition:background-color .5s, color .3s, transform .5s;
+    margin-top: 10px;
+    padding: 5px;
+
   }
 
+a:visited {color:black;}
+
 a:hover {
-  background: white;
-  border-radius: 20px;
+  background-color: black;
+  color: white;
+  transform: scale(1.2);
 }

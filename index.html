@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Daniel Rydh´s portfolio.</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="fox.css">
     <link rel="stylesheet" href="fox-hover.css">
@@ -13,10 +13,31 @@
     <link rel="stylesheet" href="text.css">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet">
     <script type="text/javascript" src="script.js" defer></script>
-    <!-- <meta name="viewport" content="width=device,initial-scale=1"> -->
+    <meta name="viewport" content="width=device,initial-scale=1">
+    <meta name="description" content="Artist and web developer Daniel Rydh´s porfolio. Episode 1 The mountain of CSS. An interactive CSS animation">
+    <meta name="author" content="Daniel Rydh">
   </head>
 
   <body>
+    <!-- <main> -->
+      <article class="">
+      <h1>Web developer Daniel Rydh´s portfolio site</h1>
+      <h2>This page is a portfolio for web developer Daniel Rydh.
+        the page is mostly visual so if you are using a screen reader or
+        other similar tool the following paragraf will provide you with a description of the visual content.</h2>
+
+        <p>The visual content of this page is displayed in in the style of and old black and white cartoon.
+     The page loads to a black screen, and in a small circle in the center of the screen there is an image of the face of a cartoon animal. The animal is drawn in simple rounded shapes, it has long straight ears on top of its head and a slightly pointed nose round eyes topped with distinct arched eyebrows and a round mouth.It is a solid color of black with the exception of the outline of its facial features which are white.
+     The animal is a mammal of sorts but what it exactly is supposed to be is hard to determine, it looks like in between a fox or a bear or a vessel, and from the angle its viewed it appears to be standing on its hind legs like a person. Its face is animated and it wiggling its nose, flapping its ears and periodically raises its eyebrows.
+     Above the circle there is a large text in white letters that says  “Web-developer Daniel Rydh present´s”  and belove the circle in slightly smaller font its says “A portfolio extravaganza!” and bellow that even smaller it says “episode one: the mountain of css”.
+     After a few seconds the text disappears and the circle begins to shrink in around the animal. When it's close to covering the animals face, it makes a bouncing motion with its body and starts flailing its arms around and the circle rapidly expands pushing the black screen away on all sides and reveals the whole animal and the scene its standing in.
+     The animal is standing in the center of the scene on top of a grassy hill with mountains and clouds in the background. As the scene is revealed two black crows about a third of the size of the animal flies in from to top corners of the screen and lands a couple of steps away on each side.
+     Now the scene is complete in the middle stands the animal on its sides the crows. All of them stands on the grassy hill and in the background are the mountain and the clouds. Besides the ground and the mountains every part of the scene has slight movement to it. The grass sways the clouds float in the sky and around the mountains, the animal bobs its body up and down and wave its arms constantly changing its facial expression. The crows bob there bodies in a similar fashion and occasionally move their feet.
+     Each of the characters have an little animation and message that appears when you hover on them with the mouse. When the mouse is over the animal hit stretches its body stomps its legs waves its ears frantecttly and its eyes open in an expand in an excited stare. A speech bubble expands from its mouth and floats up above its head. The text in the bubble says “Hey hey hello Look at all this flipping CSS going on!”. When the mouse is on one of the crows they flap tier wings and lift a small bit of the ground. The left crow speech bubble says “Wait what? All of this is just a bunch of css” and the right crows says “I feel like this would have been easier with gif´s but maybe that's beside the point.” finally on the top right corner of the page there is a link to Daniel Rydh´s github page that simply says “github” in black text.
+      </p>
+
+      </article>
+
     <div class="scene">
 
       <div class="sky-container">
@@ -718,9 +739,9 @@
       </div>
 
 
-      <div class="fox-container">
+      <div class="fox-container" id="fox">
         <div class="fox-text">
-        <p>I am a artist turned webdeveloper based out of stockholm sweden.</p>
+        <p>Hey hey hello Look at all this flipping CSS going on!.</p>
         </div>
 
         <svg version="1.1" x="0px" y="0px"
@@ -796,10 +817,10 @@
 
       <div class="bird1-container">
         <div class="bird1-text">
-        <p>check me out on github!.</p>
+        <p>WAIT WHAT? ALL OF THIS IS JUST A BUNCH OF CSS!</p>
         </div>
 
-        <svg version="1.1" class="bird1" x="0px" y="0px"
+        <svg version="1.1" class="bird1" id="bird1" x="0px" y="0px"
            viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;">
         <style type="text/css">
           .st049{fill:#FFFFFF;stroke:#FFFFFF;stroke-miterlimit:10;}
@@ -872,10 +893,10 @@
       <div class="bird2-container">
 
         <div class="bird2-text">
-        <p>WAIT WHAT? ALL OF THIS IS JUST A BUNCH OF CSS!</p>
+        <p>I FEEL LIKE THIS WOULD HAVE BEEN ESIER WITH GIF´S. BUT MAYBE THATS BESIDE THE POINT.</p>
         </div>
 
-        <svg version="1.1" class="bird2" x="0px" y="0px"
+        <svg version="1.1" class="bird2" id="bird2" x="0px" y="0px"
            viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;">
         <style type="text/css">
           .st049{fill:#FFFFFF;stroke:#FFFFFF;stroke-miterlimit:10;}
@@ -886,7 +907,7 @@
           .st549{display:none;}
         </style>
 
-        <g class="bird-two">
+        <g class="bird-two" >
         <g class="bird2-wings">
 
         <g class="bird2-left-wing-g">
@@ -965,13 +986,13 @@
       <h2 class="intro-text">A PORTFOLIO EXTRAVAGANZA!</h2>
       <p class="intro-text">EPISODE 1: THE MOUNTAIN OF CSS.</p>
 
-      <!-- <a href="https://github.com/danielrydh/">Github.</a> -->
+      <a id="git" href="https://github.com/danielrydh/">Github.</a>
 
       </div>
 
     </div>
 
-
+<!-- </main> -->
 
   </body>
 </html>

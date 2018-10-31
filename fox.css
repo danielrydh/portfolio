@@ -8,7 +8,7 @@
   perspective: 700px;
   position: absolute;
   /* z-index: 100; */
-  transform: translate(0px,30px);
+  transform: translate(10px,30px);
 }
 
 /* KEYFRAMES FOR FOX ANIMATION */
@@ -203,17 +203,19 @@ transform-origin: 100px 150px;
 .left-arm-thumb {
   transform: rotate(-60deg);
   animation: arm-wave 2s 5s infinite;
+  will-change: transform;
 }
 
 .right-arm-thumb {
   transform: rotate(70deg);
   animation: arm-wave 2s 5.2s infinite;
-   2s
+  will-change: transform;
 }
 
 /* MAIN BODY MAIN BODY MAIN BODY MAIN BODY */
 .body-face-ears {
   animation: body-sway 2s 4s  infinite;
+  will-change: transform;
 }
 
 .ears {

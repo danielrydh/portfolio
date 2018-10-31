@@ -21,7 +21,6 @@
 .bird2-right-wing {
   transform: rotate(60deg) scale(.3);
   transform-origin: 200px 189px;
-
 }
 
 .bird2-beak {
@@ -163,30 +162,25 @@
 
 .bird2 {
   animation:  fly-in-bird2 9.5s;
-  animation-play-state: paused;
 }
-
-
- .bird2 {
-  animation-play-state: running;
-}
-
 
 .bird2-left-wing {
   animation: bird2-wing-flap-fly-in 2.5s 7s;
-  animation-play-state: paused;
-  transform-origin: 180px 189px;
+  will-change: transform;
 }
 
 .bird2-right-wing {
   animation: bird2-wing-flap-right-fly-in 2.5s 7s;
-  animation-play-state: paused;
+  will-change: transform;
 }
 
- .bird2-left-wing {
-  animation-play-state: running;
-}
 
- .bird2-right-wing {
-  animation-play-state: running;
+
+/* ONCLICK ONCLICK ONCLICK ONCLICK ONCLICK ONCLICK ONCLICK ONCLICK ONCLICK ONCLICK ONCLICK ONCLICK  */
+@keyframes click-in-bird2 {
+  50% {transform: translate(0px,-200px) scale(.7,1.2);}
+
+}
+.open {
+  animation:  click-in-bird2 .5s;
 }

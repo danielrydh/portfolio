@@ -268,30 +268,14 @@
 
 .bird1 {
   animation: fly-in 9.2s  ;
-  animation-play-state: paused;
+
 }
-
-
- .bird1 {
-  animation-play-state: running;
-}
-
 
 .bird-left-wing {
   animation: wing-flap-fly-in 3s 7s ;
-  animation-play-state: paused;
   transform-origin: 180px 189px;
 }
 
 .bird-right-wing {
   animation: wing-flap-right-fly-in 3s 7s ;
-  animation-play-state: paused;
-}
-
- .bird-left-wing {
-  animation-play-state: running;
-}
-
- .bird-right-wing {
-  animation-play-state: running;
 }
